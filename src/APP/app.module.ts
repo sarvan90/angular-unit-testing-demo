@@ -2,18 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TeaService } from './tea.service';
 import { IceComponent } from './ice/ice.component';
+import { HelloPipe } from './ice/hello.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IceComponent
+    IceComponent,
+    HelloPipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [TeaService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

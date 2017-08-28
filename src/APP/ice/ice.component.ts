@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ice.component.css']
 })
 export class IceComponent implements OnInit {
-
+  userName = 'sarvan';
   constructor() { }
 
   ngOnInit() {

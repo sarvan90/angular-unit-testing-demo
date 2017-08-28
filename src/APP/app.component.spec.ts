@@ -1,3 +1,5 @@
+import { HelloPipe } from './ice/hello.pipe';
+import { IceComponent } from './ice/ice.component';
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
@@ -6,7 +8,9 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        IceComponent,
+        HelloPipe
       ],
     }).compileComponents();
   }));
